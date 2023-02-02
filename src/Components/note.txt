@@ -1,0 +1,89 @@
+API call in js
+--------------
+
+AJAX
+
+-XML https
+-fetch
+-asynch await
+
+REdirection 
+
+react-router-dom
+
+- npm i react-router-dom
+
+BrowserRouter - all routing need components
+
+Routes        - To set path for each components
+
+Route         - Morethan one path
+
+
+useParams  - hook used to access params from component url
+
+REDUX  - importent (STATE management tool)
+-----
+
+coupling - Many connection between parent and child component (data sharing ill kure connection varunnathanu coupling )
+
+propsdrilling - In coupling if any intermediate component have any errors all
+the other child will not work. this is called props drilling (parent nu error vannal stuck aakum )
+
+to avoid props drilling we need to reduce coupling and make all the components independent
+
+for this react introduced new technology - State management technology - REDUX
+
+
+REDUX PROCESS (data ne nerittu kodukkunnu)
+=> 
+Create a new js file to keep the state , all the components can access the js file
+
+- The components ony can access the data from the js file but they cant update js file
+
+ -Action - a file with all the logics to update state
+
+ -Dispatch - method used to despatch the logic in action file when the component need updation
+
+ -Reducer is a library - update the datas in js file according to the payload ressponse get from action file
+
+
+1- REDUX
+2- REACT REDUX
+3- REdUX - THUNK
+
+   npm i redux react-redux redux-thunk
+
+   createStore() - method used to create store in js file (REDUX)
+          
+          - 2 arguments needed
+          1 . Reducer - update cheyyan
+          2 . Middleware - used to make sychronous into asychronous (REDUX sychronous AANU)
+
+    applyMiddleware () - Method in REDUX to apply middleware
+
+
+    combainReducers () -  method in REDUX used to combine all the reducers in js file     
+
+    thunk  -IN REDUX - used to create middleware   (.....)- spread operators - onnil kooduthal data undenkil use cheyyunnu
+
+
+    1. Create store
+
+    2. Apply the store in index.js  
+       
+       provider - its a tag used to pass the store (react - redux)
+
+
+AXIOS   -  module used to make http methods(api call)
+
+npm i axios
+
+useDispatch - hook used to dispatch action in components - from react-redux
+
+
+to access data from store to component  - useSelector - hook
+
+
+
+
